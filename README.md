@@ -3,7 +3,9 @@
 
 ### 1.安装：
 git clone git@github.com:possib1e/ffuf.git
+
 chmod +x singe-ffuf
+
 chmod +x batc-ffuf
 ### 2.使用
 #### 2.1 单个目标
