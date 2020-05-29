@@ -1,7 +1,7 @@
 ## 根据平时时候习惯，对ffuf的一些辅助脚本
 根据平时的使用习惯，很多命令要重复敲，浪费时间和脑容量，稍微包装了使用场景，内置了常用的大中小字典，并且写了个脚本，批量检测时候可以对结果进行汇总，并且根据返回包的大小进行去重。
 
-### 1.安装：
+### 1.安装 ：
 git clone https://github.com/possib1e/ffuf.git
 chmod +x singe-ffuf
 chmod +x batc-ffuf
