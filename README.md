@@ -1,6 +1,6 @@
 # 根据平时时候习惯，对ffuf的一些辅助脚本
 
-###安装：
+### 安装：
 
 git clone git@github.com:possib1e/ffuf.git
 
@@ -22,7 +22,7 @@ chmod +x batc-ffuf
 ./batc-ffuf baidu.txt baidu
 
 
-#### PS:ffuf是一款Go语言编写的高速Web Fuzzer工具特性
+#### PS: ffuf是一款Go语言编写的高速Web Fuzzer工具特性
 
 一个字，快！一般网站可以达到2000个包/秒
 
