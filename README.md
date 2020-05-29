@@ -26,5 +26,3 @@ ffuf -w /path/to/wordlist -u https://target/FUZZ
 
 ##### 详细使用参考如下链接
 https://github.com/ffuf/ffuf
-
-
