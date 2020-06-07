@@ -2,9 +2,16 @@
 根据平时的使用习惯，很多命令要重复敲，浪费时间和脑容量，稍微包装了使用场景，内置了常用的大中小字典，并且写了个脚本，批量检测时候可以对结果进行汇总，并且根据返回包的大小进行去重。
 
 ### 1.安装：
-git clone https://github.com/possib1e/ffuf.git  
+首先需要安装ffuf   
+https://github.com/ffuf/ffuf   
+需要Go 1.11   
+go get github.com/ffuf/ffuf   
+
+然后下载本项目的脚本   
+git clone https://github.com/possib1e/ffuf.git   
 chmod +x singe-ffuf  
 chmod +x batc-ffuf  
+
 ### 2.使用  
 #### 2.1 单个目标  
 使用方式如下，输入目标url即可，共有3个字典可以选择，小、中、大，只需要输入1,2,3,即可使用，对于结果的过滤模式使用了-ac自动过滤，如果没能自动过滤，可以直接复制屏幕输出的完整运行命令，手动使用-fc -fs等参数进行过滤结果。  
