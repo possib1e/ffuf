@@ -1,6 +1,6 @@
 echo "ffuf quick content discovery"
 mkdir $2
-for i in $(cat $1); do ffuf -w dict/content-dirsearch-0.6w.txt -u $i/FUZZ -mc 200  -o $2/$(date +%s).csv -of csv; done &
+for i in $(cat $1); do echo -e "\033[92mffuf -w dict/content-dirsearch-0.6w.txt -u $i/FUZZ -mc 200\033[0m";ffuf -w dict/content-dirsearch-0.6w.txt -u $i/FUZZ -mc 200  -o $2/$(date +%s).csv -of csv; done &
 wait
 python sum-results.py $2/ $2/ffuf-all-ori-temp.txt
 cat $2/ffuf-all-ori-temp.txt | sort | uniq  >$2/ffuf-all-ori.txt
