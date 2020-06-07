@@ -1,4 +1,5 @@
-#!/bin/bash
+#example:
+#./single-ffuf http://www.baidu.com
 
 echo "Which dict to use?"
 echo "1: content-dirsearch-0.6w.txt"

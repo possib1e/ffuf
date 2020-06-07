@@ -1,3 +1,6 @@
+#example:
+#./batc-ffuf baidu.txt baidu
+
 echo "ffuf quick content discovery"
 mkdir $2
 for i in $(cat $1); do echo -e "\033[92mffuf -w dict/content-dirsearch-0.6w.txt -u $i/FUZZ -mc 200\033[0m";ffuf -w dict/content-dirsearch-0.6w.txt -u $i/FUZZ -mc 200  -o $2/$(date +%s).csv -of csv; done &
