@@ -36,3 +36,4 @@ chmod +x batch-ffuf
 批量使用的是dirsearch.txt 6k的轻量字典快速探测，会讲结果进行汇总，然后根据返回包大小去重，输出最终结果，创建了一个专属的文件夹用来存放结果，所以两个参数，第一个参数是目标url（包含http://）的txt文档，第二个参数是创建的文件夹，用来存放结果。   
 **./batc-ffuf baidu.txt baidu**  
 ![image](https://github.com/possib1e/ffuf/blob/master/img/2.png)  
+![image](https://github.com/possib1e/ffuf/blob/master/img/3.png)  
